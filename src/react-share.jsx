@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { openWindow } from './utils';
 import * as links from './share-links'
+import {WeiboIcon} from './social-media-icons'
 
 class Share extends Component {
 	// constructor(props){
@@ -20,7 +21,7 @@ class Share extends Component {
 		return (
 			<div className="ishare">
 				<ul>
-					<li onClick={this.shareToSocialMedia.bind(this, 'weibo')}>微博</li>
+					<li onClick={this.shareToSocialMedia.bind(this, 'weibo')}><WeiboIcon />微博</li>
 					<li>微信</li>
 					<li onClick={this.shareToSocialMedia.bind(this, 'douban')}>豆瓣</li>
 					<li onClick={this.shareToSocialMedia.bind(this, 'tieba')}>贴吧</li>
